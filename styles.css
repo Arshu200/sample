@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-  background: #003366; /* Dark Blue */
+  background: #1e3a8a; /* Dark Indigo */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -29,6 +29,8 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li a {
@@ -38,21 +40,57 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffcc00; /* Gold */
+  color: #facc15; /* Yellow */
 }
 
-/* Gap Between Header and Home Section */
-.gap {
-  height: 20px; /* Reduced gap */
+/* Hamburger Menu Button */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #1e3a8a;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
 }
 
 /* Hero Section */
 .hero {
-  background: url('image/img1.jpeg') no-repeat center center/cover;
+  background: url('images/img1.jpeg') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 5rem 1rem;
-  background-color: #4a90e2; /* Light Blue Overlay */
+  background-color: #3b82f6;
+}
+
+.gap {
+  height: 1px; 
 }
 
 .hero h1 {
@@ -64,9 +102,8 @@ nav ul li a:hover {
   font-size: 1.5rem;
 }
 
-/* Services Section */
 .services {
-  background-color: #f9f9ff; /* Light Lavender */
+  background-color: #f3f4f6;
   padding: 2rem;
   text-align: center;
 }
@@ -86,26 +123,26 @@ nav ul li a:hover {
 }
 
 .service-card img {
-  width: 100%; /* Full width of the card */
-  height: 150px; /* Fixed height for uniformity */
-  object-fit: cover; /* Ensures images are not distorted */
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-10px); /* Lifts the card slightly */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .service-card img:hover {
-  transform: scale(1.1); /* Slightly zooms the image */
+  transform: scale(1.1);
 }
 
 /* Quality Section */
 .quality {
-  background-color: #eef2ff; /* Light Periwinkle */
+  background-color: #e5e7eb; /* Light Periwinkle */
   padding: 2rem;
   text-align: center;
 }
@@ -128,9 +165,8 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* CEO Message Section */
 .ceo-message {
-  background-color: #fffdf0; /* Cream */
+  background-color: #fef3c7;
   padding: 2rem;
   text-align: center;
 }
@@ -148,12 +184,12 @@ nav ul li a:hover {
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #15ff00; /* Gold Border */
+  border: 4px solid #facc15; /* Yellow Border */
 }
 
 /* Projects Section */
 .projects {
-  background-color: #f0f8ff; /* Alice Blue */
+  background-color: #f9fafb; /* Alice Blue */
   padding: 2rem;
   text-align: center;
 }
@@ -178,14 +214,14 @@ nav ul li a:hover {
 
 /* Contact and Footer */
 .contact-footer {
-  background-color: #002a66; /* Dark Blue */
+  background-color: #1e3a8a; /* Dark Indigo */
   color: white;
   padding: 2rem;
   text-align: center;
 }
 
 .contact-footer .social-links a {
-  color: #ffcc00; /* Gold */
+  color: #facc15; /* Yellow */
   text-decoration: none;
   margin: 0 0.5rem;
 }
