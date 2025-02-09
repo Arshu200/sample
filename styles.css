@@ -217,7 +217,7 @@ nav ul li a:hover {
 /* Contact and Footer */
 .contact-footer {
   background-color: #8944a8; /* Dark Indigo */
-  color: rgb(0, 0, 0);
+  color: white;
   padding: 2rem;
   text-align: center;
 }
