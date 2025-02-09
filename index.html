@@ -1,70 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROMARIAH Technical Services LLC</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #003366; color: white; padding: 20px; text-align: center; font-size: 24px; }
-        .container { padding: 20px; text-align: center; }
-        .services { display: flex; flex-direction: column; align-items: center; }
-        .service-item { display: flex; align-items: center; margin: 20px 0; max-width: 800px; }
-        .service-item img { width: 50%; height: auto; }
-        .service-item div { width: 50%; padding: 20px; text-align: left; }
-        .reverse { flex-direction: row-reverse; }
-        footer { background: #222; color: white; text-align: center; padding: 20px; position: relative; bottom: 0; width: 100%; }
-        .contact-info { margin-top: 10px; font-size: 18px; }
-        .contact-info p { margin: 5px 0; }
-        nav { background: #004080; padding: 10px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROMARIAH Technical Services LLC</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        ROMARIAH Technical Services LLC
-    </header>
+  <header>
+    <div class="logo">ROMARIAH Technical Services LLC</div>
     <nav>
-        <a href="#home">Home</a>
-        <a href="services.html">Services</a>
-        <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#ceo-message">CEO's Message</a></li>
+        <li><a href="#contact-footer">Contact</a></li>
+      </ul>
     </nav>
-    <div id="home" class="container">
-        <h2>Quality Technical Services You Can Trust</h2>
-        <p>Providing top-notch technical services tailored to your needs. From maintenance to specialized solutions, we ensure excellence in every project.</p>
-        <div class="services">
-            <div class="service-item">
-                <div>
-                    <h3>Maintenance Services</h3>
-                    <p>We offer reliable maintenance solutions to keep your equipment and infrastructure in optimal condition.</p>
-                </div>
-                <img src="https://via.placeholder.com/500" alt="Maintenance Services">
-            </div>
-            <div class="service-item reverse">
-                <div>
-                    <h3>Technical Consulting</h3>
-                    <p>Expert guidance and consulting to help you optimize your technical operations efficiently.</p>
-                </div>
-                <img src="https://via.placeholder.com/500" alt="Technical Consulting">
-            </div>
-            <div class="service-item">
-                <div>
-                    <h3>Equipment Installation</h3>
-                    <p>Professional installation of technical equipment with precision and quality assurance.</p>
-                </div>
-                <img src="https://via.placeholder.com/500" alt="Equipment Installation">
-            </div>
-        </div>
+  </header>
+
+  <div class="gap"></div>
+  <section id="home" class="hero" style="background-image: url('images/img1.jpeg');">
+    <h1>Innovation in Technical Solutions</h1>
+    <p>Quality Technical Services You Can Trust</p>
+  </section>
+  <section id="services" class="services" style="background-color: #f9f9ff;">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <img src="images/img2.jpeg" alt="PLC Systems">
+        <h3>PLC Systems</h3>
+        <p>Supply, Testing, and Commissioning of PLC and Hydraulic Control Panels</p>
+      </div>
+      <div class="service-card">
+        <img src="images/img3.jpeg" alt="Solar Solutions">
+        <h3>Solar Solutions</h3>
+        <p>Supply, Testing, and Commissioning of Solar Control Panels</p>
+      </div>
+      <div class="service-card">
+        <img src="images/img1.jpeg" alt="LV Solutions">
+        <h3>LV Solutions</h3>
+        <p>LV Switchgear and Automation Panels for WTP</p>
+      </div>
     </div>
-    <footer id="contact">
-        <p>&copy; 2025 ROMARIAH Technical Services LLC. All rights reserved.</p>
-        <div class="contact-info">
-            <p><strong>Contact Us</strong></p>
-            <p>Email: info@romariahservices.com | Phone: +123-456-7890</p>
-            <p>Address: 1234 Business Lane, City, Country</p>
-            <p>Working Hours: Mon - Fri | 9:00 AM - 6:00 PM</p>
-            <p>Follow us on: <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Twitter</a></p>
-        </div>
-    </footer>
+  </section>
+
+  <!-- Quality Section -->
+  <section id="quality" class="quality" style="background-color: #eef4ff;">
+    <h2>Why Choose Us?</h2>
+    <div class="quality-grid">
+      <div class="quality-card">
+        <h3>State-of-the-Art Facilities</h3>
+        <p>Equipped with the latest tools and technologies.</p>
+      </div>
+      <div class="quality-card">
+        <h3>Expert Engineering Team</h3>
+        <p>Highly skilled engineers dedicated to solving complex challenges.</p>
+      </div>
+      <div class="quality-card">
+        <h3>Rigorous Quality Checks</h3>
+        <p>Every product undergoes multiple layers of testing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CEO's Message -->
+  <section id="ceo-message" class="ceo-message" style="background-color: #fff8f0;">
+    <h2>Message from the CEO</h2>
+    <div class="ceo-container">
+      <div class="ceo-photo">
+        <img src="images/ceo.jpeg" alt="Ambrose Ronald Rose">
+      </div>
+      <blockquote>
+        "Dear Valued Partners,<br>
+        Welcome to Romariah Technical Services, where innovation, quality, and reliability define our approach to switchgear and electromechanical solutions...<br>
+        Best regards,<br>
+        <strong>Ambrose Ronald Rose</strong><br>
+        CEO, Romariah Technical Services"
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects" style="background-color: #f0f8ff;">
+    <h2>Our Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">DELTA CONTROLS FZCO</div>
+      <div class="project-card">INTECH PROCESS AUTOMATION</div>
+      <div class="project-card">SEMEA ELECTRICAL & AUTOMATION FZE</div>
+      <div class="project-card">KLEEV MIDDLE EAST FZE</div>
+      <div class="project-card">JASUBHAI INTL.FZCE</div>
+      <div class="project-card">ALDERLEY FZE</div>
+      <div class="project-card">ESSKAY GULF ELECTROMECHANICAL SERVICES LLC</div>
+      <div class="project-card">GATES ENGINEERING & SERVICES</div>
+      <div class="project-card">AVER SOLUTIONS FZE</div>
+      <div class="project-card">VISTA AUTOMATION NETWORK LLC</div>
+      <div class="project-card">FEAG MIDDLE EAST LLC</div>
+      <div class="project-card">AL SHAFAR UNITED SWITCHGEAR LLC</div>
+      <div class="project-card">SAFETY ELECTRICAL SWITCHGEAR MANUFACTURING LLC</div>
+      <div class="project-card">TECUMEX MIDDLE EAST FZCO</div>
+      <div class="project-card">DYNAMIC CONTRACTING EQUIPMENTS FZE</div>
+      <div class="project-card">WAROM TECHNOLOGY MENA FZCO</div>
+      <div class="project-card">TECHNOSERVE INDUSTRIAL SERVICES</div>
+    </div>
+  </section>
+
+  <!-- Contact and Footer -->
+  <footer id="contact-footer" class="contact-footer" style="background-color: #003366; color: white;">
+    <h2>Contact Us</h2>
+    <p>Email: romariahllc@gmail.com | Office Phone: +971 42720750 | Fax: +971 42720751 | Mobile: +971 50 525 2772</p>
+    <p>Address: 1234 Business Lane, City, Country</p>
+    <p>Working Hours: Mon - Fri | 9:00 AM - 6:00 PM</p>
+    <div class="social-links">
+      Follow us on: 
+      <a href="#">Facebook</a> | 
+      <a href="#">LinkedIn</a> | 
+      <a href="#">Twitter</a>
+    </div>
+    <p>&copy; 2025 ROMARIAH Technical Services LLC. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
