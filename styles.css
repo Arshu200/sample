@@ -7,9 +7,12 @@ body {
   color: #333;
 }
 
+.logo .img{
+  border-radius: 50%;
+}
 /* Header */
 header {
-  background: #1e3a8a; /* Dark Indigo */
+  background: #8944a8; /* Dark Indigo */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -84,7 +87,7 @@ nav ul li a:hover {
 .hero {
   background: url('images/img1.jpeg') no-repeat center center/cover;
   color: white;
-  text-align: center;
+  text-align: end;
   padding: 5rem 1rem;
   background-color: #3b82f6;
 }
@@ -92,7 +95,6 @@ nav ul li a:hover {
 .gap {
   height: 1px; 
 }
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
@@ -214,14 +216,14 @@ nav ul li a:hover {
 
 /* Contact and Footer */
 .contact-footer {
-  background-color: #1e3a8a; /* Dark Indigo */
-  color: white;
+  background-color: #8944a8; /* Dark Indigo */
+  color: rgb(0, 0, 0);
   padding: 2rem;
   text-align: center;
 }
 
 .contact-footer .social-links a {
-  color: #facc15; /* Yellow */
+  color: #5c594e; /* Yellow */
   text-decoration: none;
   margin: 0 0.5rem;
 }
